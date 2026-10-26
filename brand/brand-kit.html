@@ -1,0 +1,2087 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1E2B23" />
+    <meta
+      name="description"
+      content="Manual de identidade visual de João Victor Oliveira Advocacia. Marca, cores, tipografia e aplicações da direção Old Money."
+    />
+    <title>João Victor Oliveira — Manual de identidade</title>
+    <link rel="icon" href="logo/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="logo/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&amp;family=Montserrat:wght@400;500;600&amp;family=Pinyon+Script&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ivory: #f2ece1;
+        --green: #1e2b23;
+        --leather: #7a5c33;
+        --brass: #d6be8e;
+        --wine: #5e1e2a;
+        --display: "Bodoni Moda", Didot, serif;
+        --sans: "Montserrat", Arial, sans-serif;
+        --script: "Pinyon Script", cursive;
+        --rule: color-mix(in srgb, var(--green) 23%, transparent);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+      body {
+        margin: 0;
+        background: var(--ivory);
+        color: var(--green);
+        font-family: var(--sans);
+        font-size: 15px;
+        line-height: 1.75;
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 1px;
+      }
+      a:hover {
+        text-decoration-color: var(--leather);
+      }
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--wine);
+        outline-offset: 6px;
+      }
+      ::selection {
+        background: var(--wine);
+        color: var(--ivory);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      button {
+        font: inherit;
+      }
+      h1,
+      h2,
+      h3,
+      p,
+      figure {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--display);
+        font-weight: 500;
+        font-optical-sizing: none;
+        font-variation-settings: "opsz" 18;
+        text-wrap: balance;
+      }
+      h1 {
+        font-size: clamp(48px, 6vw, 88px);
+        line-height: 1.05;
+      }
+      h2 {
+        font-size: clamp(38px, 4.2vw, 60px);
+        line-height: 1.12;
+      }
+      h3 {
+        font-size: 30px;
+        line-height: 1.2;
+      }
+      p {
+        max-width: 68ch;
+      }
+      p + p {
+        margin-top: 16px;
+      }
+      small,
+      .small {
+        font-size: 12px;
+        line-height: 1.65;
+      }
+      .caption {
+        font-size: 12px;
+        line-height: 1.7;
+        margin-top: 20px;
+      }
+      .caps {
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .wrap {
+        width: min(1200px, calc(100% - 96px));
+        margin-inline: auto;
+      }
+      .skip {
+        position: absolute;
+        left: 20px;
+        top: -90px;
+        background: var(--ivory);
+        color: var(--green);
+        padding: 12px;
+        z-index: 20;
+      }
+      .skip:focus {
+        top: 10px;
+      }
+      .masthead {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0;
+        border-bottom: 1px solid
+          color-mix(in srgb, var(--ivory) 28%, transparent);
+        gap: 20px;
+      }
+      .masthead .name {
+        font-size: 12px;
+        letter-spacing: 0.13em;
+      }
+      .cover {
+        color: var(--ivory);
+        background: var(--green);
+      }
+      .cover-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 9%;
+        align-items: center;
+        min-height: 680px;
+        padding-block: 90px;
+      }
+      .cover h1 span {
+        font-family: var(--script);
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 0.8;
+        display: block;
+        margin-top: 18px;
+      }
+      .cover-copy {
+        margin-top: 46px;
+        max-width: 350px;
+        font-size: 14px;
+        color: var(--ivory);
+      }
+      .cover-title {
+        margin-top: 32px;
+        letter-spacing: 0.15em;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      .cover-seal {
+        border: 1px solid color-mix(in srgb, var(--brass) 45%, transparent);
+        padding: 65px 52px;
+        position: relative;
+        background: var(--wine);
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+      }
+      .cover-seal img {
+        width: 90%;
+      }
+      .cover-bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        border-top: 1px solid color-mix(in srgb, var(--ivory) 28%, transparent);
+        padding: 22px 0;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+      }
+      .nav {
+        background: var(--ivory);
+        border-bottom: 1px solid var(--rule);
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+      .nav-inner {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        min-height: 68px;
+        overflow: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--leather) var(--ivory);
+      }
+      .nav a {
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.11em;
+      }
+      .nav a:hover {
+        text-decoration: underline;
+      }
+      .chapter {
+        padding-block: 100px;
+        border-bottom: 1px solid var(--rule);
+      }
+      .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10%;
+        align-items: start;
+        margin-bottom: 56px;
+      }
+      .intro p {
+        padding-top: 7px;
+      }
+      .intro h2 {
+        max-width: 500px;
+      }
+      .specimen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 300px;
+        padding: 70px;
+        background: var(--green);
+        color: var(--ivory);
+      }
+      .specimen.ivory {
+        background: transparent;
+        border: 1px solid var(--rule);
+        color: var(--green);
+      }
+      .specimen.wine {
+        background: var(--wine);
+      }
+      .mono-stage {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .mono-stage .specimen {
+        min-height: 470px;
+      }
+      .mono-stage .specimen img {
+        width: 240px;
+      }
+      .notes {
+        display: grid;
+        gap: 28px;
+      }
+      .notes h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+      .notes p {
+        font-size: 14px;
+      }
+      .signature-stage {
+        margin-bottom: 60px;
+      }
+      .signature-stage .specimen {
+        min-height: 290px;
+      }
+      .signature-stage img {
+        width: min(920px, 100%);
+      }
+      .lockup-stage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .lockup-stage .specimen {
+        min-height: 390px;
+        padding: 65px;
+      }
+      .lockup-stage .specimen img {
+        width: 380px;
+      }
+      .download {
+        font-size: 12px;
+        display: inline-block;
+        margin-top: 16px;
+      }
+      .variant-head,
+      .variant-row {
+        display: grid;
+        grid-template-columns: 120px 1.5fr 1fr;
+        gap: 50px;
+        align-items: center;
+      }
+      .variant-head {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        padding: 0 40px 20px;
+      }
+      .variant-row {
+        padding: 42px 40px;
+        min-height: 220px;
+      }
+      .variant-row .mono {
+        width: 85px;
+        margin: auto;
+      }
+      .variant-row .signature {
+        width: 100%;
+      }
+      .variant-row .lockup {
+        width: 200px;
+        margin: auto;
+      }
+      .variant-row a {
+        display: block;
+        transition: opacity 0.15s;
+      }
+      .variant-row a:hover {
+        opacity: 0.7;
+      }
+      .variant-caption {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 12px;
+        padding: 14px 0 25px;
+      }
+      .on-ivory {
+        background: var(--ivory);
+        color: var(--green);
+        border: 1px solid var(--rule);
+      }
+      .on-green {
+        background: var(--green);
+        color: var(--ivory);
+      }
+      .on-wine {
+        background: var(--wine);
+        color: var(--brass);
+      }
+      .on-wine-light {
+        background: var(--wine);
+        color: var(--ivory);
+      }
+      .on-white {
+        background: white;
+        color: black;
+        border: 1px solid var(--rule);
+      }
+      .notice {
+        font-size: 13px;
+        border-top: 1px solid var(--rule);
+        margin-top: 24px;
+        padding-top: 20px;
+      }
+      .protect-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+      }
+      .protection {
+        padding: 60px;
+        border: 1px solid var(--rule);
+        display: grid;
+        place-items: center;
+      }
+      .safe-boundary {
+        padding: 45px;
+        border: 1px dashed var(--leather);
+        position: relative;
+      }
+      .safe-boundary img {
+        width: 185px;
+        outline: 1px solid color-mix(in srgb, var(--green) 20%, transparent);
+      }
+      .safe-boundary:before {
+        content: "x";
+        position: absolute;
+        left: 11px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: var(--display);
+        font-size: 24px;
+      }
+      .safe-boundary:after {
+        content: "x";
+        position: absolute;
+        top: 2px;
+        left: 50%;
+        font-family: var(--display);
+        font-size: 24px;
+      }
+      .measure {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        margin-top: 30px;
+        font-variant-numeric: tabular-nums;
+      }
+      .measure th,
+      .measure td {
+        padding: 16px 0;
+        text-align: left;
+        border-bottom: 1px solid var(--rule);
+      }
+      .measure th {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .minimum-demo {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 35px;
+      }
+      .minimum-demo img {
+        width: 48px;
+      }
+      .minimum-demo .tiny {
+        width: 32px;
+      }
+      .palette-ribbon {
+        display: flex;
+        height: 150px;
+        margin-bottom: 25px;
+      }
+      .palette-ribbon div {
+        display: flex;
+        align-items: end;
+        padding: 18px;
+        font-size: 12px;
+      }
+      .palette-ribbon .p1 {
+        width: 50%;
+        background: var(--ivory);
+        border: 1px solid var(--rule);
+      }
+      .palette-ribbon .p2 {
+        width: 30%;
+        background: var(--green);
+        color: var(--ivory);
+      }
+      .palette-ribbon .p3 {
+        width: 10%;
+        background: var(--wine);
+        color: var(--ivory);
+      }
+      .palette-ribbon .p4 {
+        width: 5%;
+        background: var(--leather);
+        color: var(--ivory);
+        padding: 12px 6px;
+      }
+      .palette-ribbon .p5 {
+        width: 5%;
+        background: var(--brass);
+        padding: 12px 6px;
+      }
+      .palette-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 25px;
+        margin-top: 50px;
+      }
+      .swatch {
+        height: 85px;
+        margin-bottom: 22px;
+        border: 1px solid var(--rule);
+      }
+      .palette-list h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+      .palette-list p {
+        font-size: 12px;
+        margin-top: 6px;
+      }
+      .palette-list .values {
+        font-variant-numeric: tabular-nums;
+      }
+      .palette-note {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        margin-top: 48px;
+        padding-top: 30px;
+        border-top: 1px solid var(--rule);
+        font-size: 13px;
+      }
+      .type-showcase {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 70px;
+        align-items: end;
+      }
+      .type-sample {
+        font-family: var(--display);
+        font-variation-settings: "opsz" 18;
+        font-size: clamp(60px, 7vw, 96px);
+        line-height: 1.1;
+      }
+      .type-script {
+        font-family: var(--script);
+        font-size: 78px;
+        line-height: 1.1;
+        margin-top: 24px;
+      }
+      .type-mont {
+        font-size: 16px;
+        letter-spacing: 0.25em;
+        margin: 34px 0;
+      }
+      .type-info {
+        border-top: 1px solid var(--rule);
+        padding-top: 22px;
+        font-size: 13px;
+      }
+      .type-info p + p {
+        margin-top: 22px;
+      }
+      .hierarchy {
+        margin-top: 65px;
+      }
+      .hierarchy-row {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        gap: 30px;
+        align-items: center;
+        padding: 30px 0;
+        border-top: 1px solid var(--rule);
+      }
+      .hierarchy-row .meta {
+        font-size: 12px;
+      }
+      .h1-demo {
+        font-family: var(--display);
+        font-size: clamp(44px, 5vw, 72px);
+        line-height: 1.08;
+        font-variation-settings: "opsz" 18;
+      }
+      .h2-demo {
+        font-family: var(--display);
+        font-size: 48px;
+        line-height: 1.12;
+        font-variation-settings: "opsz" 18;
+      }
+      .h3-demo {
+        font-family: var(--display);
+        font-size: 32px;
+        line-height: 1.2;
+        font-variation-settings: "opsz" 18;
+      }
+      .body-demo {
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 68ch;
+      }
+      .label-demo {
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      .applications {
+        background: var(--green);
+        color: var(--ivory);
+      }
+      .applications .intro p {
+        color: var(--ivory);
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+      .business-card {
+        aspect-ratio: 1.75;
+        box-shadow: 0 18px 35px #07120d33;
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+      }
+      .card-front {
+        background: var(--wine);
+        align-items: center;
+      }
+      .card-front img {
+        width: 30%;
+      }
+      .card-back {
+        background: var(--ivory);
+        color: var(--green);
+      }
+      .card-back img {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .card-back .contact {
+        font-size: 12px;
+        line-height: 1.85;
+      }
+      .applications .caption {
+        color: var(--ivory);
+      }
+      .application-detail {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 70px;
+        margin-top: 75px;
+      }
+      .email-preview {
+        background: var(--ivory);
+        color: var(--green);
+        padding: 36px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        min-height: 220px;
+      }
+      .email-preview > img {
+        width: 70px;
+      }
+      .email-copy {
+        padding-left: 26px;
+        border-left: 1px solid var(--leather);
+        font-size: 12px;
+        line-height: 1.9;
+      }
+      .email-copy strong {
+        font-weight: 600;
+        font-size: 13px;
+        display: block;
+      }
+      .avatar-preview {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        min-height: 220px;
+      }
+      .avatar-preview img {
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid color-mix(in srgb, var(--brass) 50%, transparent);
+      }
+      .icon-downloads {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        font-size: 12px;
+      }
+      .bad-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 36px 45px;
+      }
+      .bad {
+        border-top: 1px solid var(--rule);
+        padding-top: 24px;
+      }
+      .bad-visual {
+        padding: 12px;
+        height: 170px;
+        background: var(--green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
+      .bad-visual img {
+        width: 85px;
+      }
+      .bad h3 {
+        font-family: var(--sans);
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+      .bad p {
+        font-size: 12px;
+      }
+      .distort img {
+        transform: scaleX(1.65) scaleY(0.8);
+      }
+      .rotate img {
+        transform: rotate(-22deg);
+      }
+      .effect img {
+        filter: drop-shadow(5px 5px 1px #d6be8e);
+      }
+      .wrong-color {
+        background: var(--ivory);
+      }
+      .wrong-color img {
+        filter: sepia(1) saturate(8) hue-rotate(140deg);
+      }
+      .low-contrast {
+        background: var(--brass);
+      }
+      .encroach {
+        position: relative;
+      }
+      .encroach span {
+        position: absolute;
+        font-family: var(--display);
+        font-size: 32px;
+        bottom: 30px;
+        color: var(--ivory);
+      }
+      .files {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+      }
+      .files h2 {
+        margin-bottom: 28px;
+      }
+      .files ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .files li {
+        padding: 17px 0;
+        border-bottom: 1px solid var(--rule);
+        font-size: 13px;
+      }
+      .files li a {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .footer {
+        padding: 35px 0;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+      }
+      .screen-only {
+        display: block;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .variant-row a {
+          transition: none;
+        }
+      }
+      @media (min-width: 1600px) {
+        .cover-grid {
+          min-height: 760px;
+        }
+      }
+      @media (max-width: 1000px) {
+        .wrap {
+          width: calc(100% - 64px);
+        }
+        .cover-grid {
+          gap: 6%;
+          min-height: 600px;
+        }
+        .cover-seal {
+          padding: 45px 30px;
+        }
+        .variant-head,
+        .variant-row {
+          grid-template-columns: 85px 1.6fr 1fr;
+          gap: 30px;
+        }
+        .variant-row {
+          padding: 34px 28px;
+        }
+        .variant-head {
+          padding-inline: 28px;
+        }
+        .intro {
+          gap: 7%;
+        }
+        .mono-stage,
+        .lockup-stage {
+          gap: 40px;
+        }
+        .palette-list {
+          gap: 16px;
+        }
+        .palette-list h3 {
+          font-size: 22px;
+        }
+        .business-card {
+          padding: 30px;
+        }
+        .email-preview {
+          padding: 26px;
+          gap: 20px;
+        }
+        .email-copy {
+          padding-left: 20px;
+        }
+        .application-detail {
+          gap: 35px;
+        }
+        .avatar-preview {
+          gap: 22px;
+        }
+        .avatar-preview img {
+          width: 115px;
+        }
+        .hierarchy-row {
+          grid-template-columns: 190px 1fr;
+        }
+        .protection {
+          padding: 40px;
+        }
+        .protect-layout {
+          gap: 40px;
+        }
+        .safe-boundary {
+          padding: 35px;
+        }
+      }
+      @media (max-width: 700px) {
+        html {
+          scroll-padding-top: 80px;
+        }
+        .wrap {
+          width: calc(100% - 40px);
+        }
+        body {
+          font-size: 14px;
+        }
+        .masthead {
+          padding: 20px 0;
+        }
+        .masthead .name {
+          font-size: 12px;
+          letter-spacing: 0.08em;
+        }
+        .masthead .caps {
+          font-size: 12px;
+          letter-spacing: 0.07em;
+        }
+        .cover-grid {
+          grid-template-columns: 1fr;
+          padding: 60px 0;
+          gap: 55px;
+          min-height: 0;
+        }
+        .cover h1 {
+          font-size: 58px;
+        }
+        .cover-copy {
+          margin-top: 32px;
+        }
+        .cover-seal {
+          width: min(340px, 100%);
+          justify-self: center;
+          padding: 55px;
+        }
+        .cover-bottom {
+          font-size: 12px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .nav-inner {
+          gap: 25px;
+          min-height: 60px;
+        }
+        .nav a {
+          font-size: 12px;
+        }
+        .chapter {
+          padding-block: 65px;
+        }
+        .intro {
+          grid-template-columns: 1fr;
+          gap: 24px;
+          margin-bottom: 35px;
+        }
+        .intro p {
+          padding-top: 0;
+        }
+        .mono-stage,
+        .lockup-stage,
+        .protect-layout,
+        .type-showcase,
+        .cards,
+        .application-detail,
+        .files {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+        .mono-stage .specimen {
+          min-height: 350px;
+        }
+        .mono-stage .specimen img {
+          width: 200px;
+        }
+        .specimen {
+          padding: 35px;
+          min-height: 200px;
+        }
+        .signature-stage {
+          margin-bottom: 40px;
+        }
+        .signature-stage .specimen {
+          padding: 30px 18px;
+          min-height: 155px;
+        }
+        .lockup-stage .specimen {
+          min-height: 320px;
+          padding: 45px 30px;
+        }
+        .lockup-stage .specimen img {
+          width: 300px;
+        }
+        .variant-head {
+          display: none;
+        }
+        .variant-row {
+          grid-template-columns: 1fr 2.6fr;
+          gap: 28px;
+          padding: 32px 22px;
+        }
+        .variant-row .mono {
+          width: 65px;
+        }
+        .variant-row .lockup-link {
+          grid-column: 1/-1;
+        }
+        .variant-row .lockup {
+          width: 170px;
+        }
+        .variant-caption {
+          display: block;
+          font-size: 12px;
+        }
+        .variant-caption span {
+          display: block;
+        }
+        .palette-ribbon {
+          height: 100px;
+        }
+        .palette-ribbon div {
+          font-size: 12px;
+          padding: 10px;
+        }
+        .palette-ribbon .p4,
+        .palette-ribbon .p5 {
+          padding: 8px 1px;
+        }
+        .palette-list {
+          grid-template-columns: 1fr 1fr;
+          gap: 30px 24px;
+        }
+        .palette-note {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+        .type-sample {
+          font-size: 70px;
+        }
+        .type-script {
+          font-size: 66px;
+        }
+        .hierarchy-row {
+          grid-template-columns: 1fr;
+          gap: 15px;
+          padding: 25px 0;
+        }
+        .h2-demo {
+          font-size: 38px;
+        }
+        .h1-demo {
+          font-size: 44px;
+        }
+        .hierarchy-row .meta {
+          font-size: 12px;
+        }
+        .business-card {
+          padding: 28px;
+        }
+        .card-back .contact {
+          font-size: 12px;
+        }
+        .card-back img {
+          margin-bottom: 23px;
+        }
+        .application-detail {
+          margin-top: 50px;
+        }
+        .email-preview {
+          padding: 28px 20px;
+          gap: 20px;
+        }
+        .email-preview > img {
+          width: 50px;
+        }
+        .email-copy {
+          font-size: 12px;
+          padding-left: 16px;
+        }
+        .email-copy strong {
+          font-size: 12px;
+        }
+        .avatar-preview {
+          justify-content: center;
+          min-height: 180px;
+        }
+        .avatar-preview img {
+          width: 140px;
+        }
+        .bad-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 30px 22px;
+        }
+        .bad-visual {
+          height: 145px;
+        }
+        .bad-visual img {
+          width: 70px;
+        }
+        .bad h3 {
+          font-size: 12px;
+        }
+        .footer {
+          flex-direction: column;
+          gap: 12px;
+        }
+        .protection {
+          padding: 40px 25px;
+        }
+        .safe-boundary img {
+          width: 165px;
+        }
+        .measure {
+          font-size: 12px;
+        }
+        .measure th {
+          font-size: 12px;
+        }
+        .files {
+          gap: 40px;
+        }
+      }
+      @media print {
+        html {
+          scroll-behavior: auto;
+        }
+        body {
+          font-size: 10pt;
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+        .wrap {
+          width: 100%;
+        }
+        .nav,
+        .skip,
+        .screen-only {
+          display: none;
+        }
+        .cover-grid {
+          min-height: 220mm;
+          grid-template-columns: 1fr 1fr;
+          padding: 35mm 10mm;
+          gap: 15mm;
+        }
+        .cover h1 {
+          font-size: 44pt;
+        }
+        .cover-seal {
+          padding: 15mm;
+        }
+        .masthead,
+        .cover-bottom {
+          padding-inline: 10mm;
+        }
+        .chapter {
+          padding: 16mm 8mm;
+          break-inside: avoid;
+        }
+        .intro {
+          margin-bottom: 10mm;
+        }
+        h2 {
+          font-size: 30pt;
+        }
+        .specimen {
+          padding: 12mm;
+        }
+        .mono-stage .specimen {
+          min-height: 90mm;
+        }
+        .variant-row {
+          padding: 8mm;
+          min-height: 50mm;
+          break-inside: avoid;
+        }
+        .variant-caption {
+          break-after: avoid;
+        }
+        .cards,
+        .application-detail {
+          gap: 8mm;
+        }
+        .business-card {
+          padding: 8mm;
+        }
+        .footer {
+          padding: 10mm 8mm;
+        }
+        .bad-grid {
+          gap: 8mm;
+        }
+        .bad {
+          break-inside: avoid;
+        }
+        .download {
+          display: none;
+        }
+      }
+      .measure th,
+      .measure td {
+        padding-right: 16px;
+      }
+      .variant-row .lockup {
+        width: 240px;
+      }
+      .safe-boundary {
+        padding: 43.27px;
+      }
+      .nav a {
+        padding-block: 18px;
+      }
+      .on-green a:focus-visible,
+      .on-wine a:focus-visible,
+      .on-wine-light a:focus-visible,
+      .applications a:focus-visible {
+        outline-color: var(--brass);
+      }
+      @media (max-width: 700px) {
+        .measure th:nth-child(4),
+        .measure td:nth-child(4) {
+          display: none;
+        }
+        .measure th,
+        .measure td {
+          padding-right: 12px;
+        }
+        .variant-row .lockup {
+          width: 240px;
+        }
+        .safe-boundary {
+          padding: 38.6px;
+        }
+        .palette-ribbon .p4,
+        .palette-ribbon .p5 {
+          writing-mode: vertical-rl;
+          padding: 10px 0;
+        }
+        .cover h1 {
+          font-size: clamp(48px, 14.8vw, 58px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Ir para o manual</a>
+    <header class="cover">
+      <div class="wrap">
+        <div class="masthead">
+          <span class="name">JOÃO VICTOR OLIVEIRA</span
+          ><span class="caps">Advocacia · Curitiba</span>
+        </div>
+        <div class="cover-grid">
+          <div>
+            <h1>João Victor<span>Oliveira</span></h1>
+            <p class="cover-title">Manual de identidade visual</p>
+            <p class="cover-copy">
+              Precisão na forma. Sobriedade na presença. Uma identidade
+              construída para acompanhar o tempo.
+            </p>
+          </div>
+          <div class="cover-seal">
+            <img
+              src="logo/monograma-latao-bordo.svg"
+              alt="Monograma oficial JO em latão sobre bordô"
+              width="466"
+              height="436"
+            />
+          </div>
+        </div>
+        <div class="cover-bottom">
+          <span>Direção A · Old Money</span
+          ><span>João Victor Martins de Oliveira</span
+          ><span>Edição 1.0 · Outubro de 2026</span>
+        </div>
+      </div>
+    </header>
+    <nav class="nav" aria-label="Seções do manual">
+      <div class="wrap nav-inner">
+        <a href="#marca">A marca</a><a href="#versoes">Versões</a
+        ><a href="#construcao">Uso e proteção</a><a href="#cores">Cores</a
+        ><a href="#tipografia">Tipografia</a><a href="#aplicacoes">Aplicações</a
+        ><a href="#arquivos">Arquivos</a>
+      </div>
+    </nav>
+    <main id="conteudo">
+      <section class="chapter wrap" id="marca">
+        <div class="intro">
+          <h2>O essencial,<br />bem desenhado.</h2>
+          <p>
+            O encontro entre uma didone e um gesto caligráfico dá à marca seu
+            equilíbrio: estrutura e expressão. O monograma JO é o elemento de
+            reconhecimento; as duas composições tipográficas permitem que a
+            identidade ocupe formatos distintos com a mesma voz.
+          </p>
+        </div>
+        <div class="mono-stage">
+          <figure>
+            <div class="specimen">
+              <img
+                src="logo/monograma-marfim-verde.svg"
+                alt="Monograma JO em marfim"
+                width="466"
+                height="436"
+              />
+            </div>
+            <figcaption class="caption">
+              Monograma oficial · O entrelaçamento aprovado na referência A5,
+              preservado em curvas vetoriais.
+            </figcaption>
+          </figure>
+          <div class="notes">
+            <div>
+              <h3>Um desenho de origem.</h3>
+              <p>
+                A haste do J atravessa o movimento do O sem perder a leitura das
+                iniciais. O terminal arredondado, as serifas e o contraste entre
+                traços finos e espessos são parte do desenho.
+              </p>
+            </div>
+            <div>
+              <h3>Uma marca, três presenças.</h3>
+              <p>
+                Use o monograma em ícones, avatares e detalhes. A assinatura
+                horizontal atende cabeçalhos e peças largas. O lockup vertical
+                concentra a identidade em capas, papelaria e composições
+                centrais.
+              </p>
+            </div>
+            <div>
+              <h3>Forma fixa.</h3>
+              <p>
+                Os arquivos de produção têm fundo transparente e letras
+                convertidas em curvas. Use os SVGs fornecidos, sem redigitar ou
+                tentar reconstruir o monograma com fontes.
+              </p>
+              <a
+                class="download"
+                href="logo/monograma-verde-marfim.svg"
+                download
+                >Baixar monograma em SVG</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="chapter wrap" aria-labelledby="composicoes">
+        <div class="intro">
+          <h2 id="composicoes">A assinatura<br />e a composição.</h2>
+          <p>
+            O nome permanece protagonista. Espaços precisos separam as letras da
+            assinatura e abrem respiro entre o monograma, o nome e o descritor
+            da composição vertical.
+          </p>
+        </div>
+        <figure class="signature-stage">
+          <div class="specimen ivory">
+            <img
+              src="logo/assinatura-verde-marfim.svg"
+              alt="João Victor Oliveira, ADVOCACIA — assinatura horizontal"
+              width="877"
+              height="136"
+            />
+          </div>
+          <figcaption class="caption">
+            Assinatura horizontal · “João Victor” em Bodoni Moda, “Oliveira” em
+            Pinyon Script e “ADVOCACIA” em Montserrat. O espaço entre as duas
+            famílias é parte da composição.
+          </figcaption>
+          <a class="download" href="logo/assinatura-verde-marfim.svg" download
+            >Baixar assinatura em SVG</a
+          >
+        </figure>
+        <div class="lockup-stage">
+          <figure>
+            <div class="specimen wine">
+              <img
+                src="logo/lockup-marfim-bordo.svg"
+                alt="JO sobre JOÃO OLIVEIRA e ADVOCACIA — composição vertical"
+                width="568"
+                height="336"
+              />
+            </div>
+            <figcaption class="caption">
+              Lockup vertical · Estrutura da referência A4 com o monograma
+              oficial A5.
+            </figcaption>
+          </figure>
+          <div class="notes">
+            <div>
+              <h3>Vertical, com presença.</h3>
+              <p>
+                O monograma aparece acima do nome em caixa alta. O descritor
+                espaçado fecha a composição. Preserve alinhamento central,
+                proporções e distâncias internas.
+              </p>
+            </div>
+            <div>
+              <h3>Escolha pelo formato.</h3>
+              <p>
+                Em um espaço largo e baixo, prefira a assinatura. Em um campo
+                quadrado ou vertical, prefira o lockup. Quando o nome já estiver
+                presente ou não couber com boa leitura, use o monograma.
+              </p>
+              <a class="download" href="logo/lockup-marfim-bordo.svg" download
+                >Baixar lockup em SVG</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="chapter wrap" id="versoes">
+        <div class="intro">
+          <h2>Uma paleta.<br />Cinco versões.</h2>
+          <p>
+            Cada linha apresenta uma combinação autorizada. O fundo é uma
+            aplicação do manual; os quinze SVGs são transparentes e contêm
+            somente a cor da marca. Selecione qualquer peça para baixar seu
+            arquivo.
+          </p>
+        </div>
+        <div class="variant-head" aria-hidden="true">
+          <span>Monograma</span><span>Assinatura horizontal</span
+          ><span>Lockup vertical</span>
+        </div>
+        <div id="variant-gallery">
+          <div class="variant-row on-ivory">
+            <a
+              href="logo/monograma-verde-marfim.svg"
+              download
+              aria-label="Baixar monograma verde sobre marfim"
+              ><img
+                class="mono"
+                src="logo/monograma-verde-marfim.svg"
+                alt="Monograma verde inglês" /></a
+            ><a
+              href="logo/assinatura-verde-marfim.svg"
+              download
+              aria-label="Baixar assinatura verde sobre marfim"
+              ><img
+                class="signature"
+                src="logo/assinatura-verde-marfim.svg"
+                alt="João Victor Oliveira — assinatura verde inglês" /></a
+            ><a
+              class="lockup-link"
+              href="logo/lockup-verde-marfim.svg"
+              download
+              aria-label="Baixar lockup verde sobre marfim"
+              ><img
+                class="lockup"
+                src="logo/lockup-verde-marfim.svg"
+                alt="JOÃO OLIVEIRA — lockup verde inglês"
+            /></a>
+          </div>
+          <p class="variant-caption">
+            <span>Verde inglês sobre marfim · Principal</span
+            ><span>…-verde-marfim.svg</span>
+          </p>
+          <div class="variant-row on-green">
+            <a
+              href="logo/monograma-marfim-verde.svg"
+              download
+              aria-label="Baixar monograma marfim sobre verde"
+              ><img
+                class="mono"
+                src="logo/monograma-marfim-verde.svg"
+                alt="Monograma marfim sobre verde" /></a
+            ><a
+              href="logo/assinatura-marfim-verde.svg"
+              download
+              aria-label="Baixar assinatura marfim sobre verde"
+              ><img
+                class="signature"
+                src="logo/assinatura-marfim-verde.svg"
+                alt="João Victor Oliveira — assinatura marfim sobre verde" /></a
+            ><a
+              class="lockup-link"
+              href="logo/lockup-marfim-verde.svg"
+              download
+              aria-label="Baixar lockup marfim sobre verde"
+              ><img
+                class="lockup"
+                src="logo/lockup-marfim-verde.svg"
+                alt="JOÃO OLIVEIRA — lockup marfim sobre verde"
+            /></a>
+          </div>
+          <p class="variant-caption">
+            <span>Marfim sobre verde inglês · Inversa principal</span
+            ><span>…-marfim-verde.svg</span>
+          </p>
+          <div class="variant-row on-wine">
+            <a
+              href="logo/monograma-latao-bordo.svg"
+              download
+              aria-label="Baixar monograma latão sobre bordô"
+              ><img
+                class="mono"
+                src="logo/monograma-latao-bordo.svg"
+                alt="Monograma latão sobre bordô" /></a
+            ><a
+              href="logo/assinatura-latao-bordo.svg"
+              download
+              aria-label="Baixar assinatura latão sobre bordô"
+              ><img
+                class="signature"
+                src="logo/assinatura-latao-bordo.svg"
+                alt="João Victor Oliveira — assinatura latão sobre bordô" /></a
+            ><a
+              class="lockup-link"
+              href="logo/lockup-latao-bordo.svg"
+              download
+              aria-label="Baixar lockup latão sobre bordô"
+              ><img
+                class="lockup"
+                src="logo/lockup-latao-bordo.svg"
+                alt="JOÃO OLIVEIRA — lockup latão sobre bordô"
+            /></a>
+          </div>
+          <p class="variant-caption">
+            <span>Latão sobre bordô · Cerimonial</span
+            ><span>…-latao-bordo.svg</span>
+          </p>
+          <div class="variant-row on-wine-light">
+            <a
+              href="logo/monograma-marfim-bordo.svg"
+              download
+              aria-label="Baixar monograma marfim sobre bordô"
+              ><img
+                class="mono"
+                src="logo/monograma-marfim-bordo.svg"
+                alt="Monograma marfim sobre bordô" /></a
+            ><a
+              href="logo/assinatura-marfim-bordo.svg"
+              download
+              aria-label="Baixar assinatura marfim sobre bordô"
+              ><img
+                class="signature"
+                src="logo/assinatura-marfim-bordo.svg"
+                alt="João Victor Oliveira — assinatura marfim sobre bordô" /></a
+            ><a
+              class="lockup-link"
+              href="logo/lockup-marfim-bordo.svg"
+              download
+              aria-label="Baixar lockup marfim sobre bordô"
+              ><img
+                class="lockup"
+                src="logo/lockup-marfim-bordo.svg"
+                alt="JOÃO OLIVEIRA — lockup marfim sobre bordô"
+            /></a>
+          </div>
+          <p class="variant-caption">
+            <span>Marfim sobre bordô · Inversa de apoio</span
+            ><span>…-marfim-bordo.svg</span>
+          </p>
+          <div class="variant-row on-white">
+            <a
+              href="logo/monograma-preto.svg"
+              download
+              aria-label="Baixar monograma preto"
+              ><img
+                class="mono"
+                src="logo/monograma-preto.svg"
+                alt="Monograma preto" /></a
+            ><a
+              href="logo/assinatura-preto.svg"
+              download
+              aria-label="Baixar assinatura preta"
+              ><img
+                class="signature"
+                src="logo/assinatura-preto.svg"
+                alt="João Victor Oliveira — assinatura preta" /></a
+            ><a
+              class="lockup-link"
+              href="logo/lockup-preto.svg"
+              download
+              aria-label="Baixar lockup preto"
+              ><img
+                class="lockup"
+                src="logo/lockup-preto.svg"
+                alt="JOÃO OLIVEIRA — lockup preto"
+            /></a>
+          </div>
+          <p class="variant-caption">
+            <span>Preto sobre fundo claro · Reprodução em uma tinta</span
+            ><span>…-preto.svg</span>
+          </p>
+        </div>
+        <p class="notice">
+          Em impressão, latão é a referência cromática. Acabamento metálico, hot
+          stamping e cores especiais exigem prova física da gráfica. Os valores
+          deste kit estão em sRGB e não especificam tinta metálica.
+        </p>
+      </section>
+      <section class="chapter wrap" id="construcao">
+        <div class="intro">
+          <h2>O espaço também<br />faz parte da marca.</h2>
+          <p>
+            Respiro e escala protegem o desenho. Não aproxime textos, bordas,
+            fotografias ou outras marcas além do limite indicado. Os SVGs têm
+            enquadramento justo: a margem de proteção deve ser acrescentada no
+            layout.
+          </p>
+        </div>
+        <div class="protect-layout">
+          <figure>
+            <div class="protection">
+              <div class="safe-boundary">
+                <img
+                  src="logo/monograma-verde-marfim.svg"
+                  alt="Monograma com margem de proteção x em todos os lados"
+                />
+              </div>
+            </div>
+            <figcaption class="caption">
+              x = ¼ da altura do monograma. Reserve pelo menos x em cada lado; a
+              linha tracejada é apenas uma indicação de construção.
+            </figcaption>
+          </figure>
+          <div>
+            <h3>Uma medida consistente.</h3>
+            <p style="margin-top: 18px">
+              No monograma isolado, use ¼ da sua altura como margem mínima. Na
+              assinatura e no lockup, reserve ¼ da altura total da peça em todos
+              os lados. Em composições editoriais, prefira margens maiores.
+            </p>
+            <p>
+              O favicon já incorpora o respiro em sua tela quadrada. Use-o como
+              entregue, sem recortar a área interna.
+            </p>
+          </div>
+        </div>
+        <table class="measure">
+          <caption
+            class="caption"
+            style="text-align: left; margin-bottom: 12px"
+          >
+            Tamanhos mínimos de reprodução · Medidos pela largura total da peça,
+            sem a margem externa.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Peça</th>
+              <th scope="col">Digital</th>
+              <th scope="col">Impresso</th>
+              <th scope="col">Uso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Monograma</th>
+              <td>48 px</td>
+              <td>12 mm</td>
+              <td>Ícones e detalhes</td>
+            </tr>
+            <tr>
+              <th scope="row">Assinatura</th>
+              <td>360 px</td>
+              <td>65 mm</td>
+              <td>Formatos horizontais</td>
+            </tr>
+            <tr>
+              <th scope="row">Lockup</th>
+              <td>240 px</td>
+              <td>45 mm</td>
+              <td>Composições centrais</td>
+            </tr>
+            <tr>
+              <th scope="row">Favicon</th>
+              <td>32 × 32 px</td>
+              <td>—</td>
+              <td>Exceção para navegador</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="minimum-demo">
+          <img
+            src="logo/monograma-verde-marfim.svg"
+            alt="Monograma na largura mínima de 48 pixels"
+            width="48"
+            height="45"
+          /><span class="small">48 px · monograma</span
+          ><img
+            class="tiny"
+            src="logo/favicon-32.png"
+            alt="Favicon na escala nativa de 32 pixels"
+            width="32"
+            height="32"
+          /><span class="small">32 px · favicon</span>
+        </div>
+        <p class="notice">
+          A assinatura não deve ser comprimida para caber em uma navegação de
+          celular: use o monograma. Os mínimos são referências conservadoras; em
+          papel poroso, gravação ou bordado, amplie a peça e aprove uma prova
+          antes da produção.
+        </p>
+      </section>
+      <section class="chapter wrap" id="cores">
+        <div class="intro">
+          <h2>Cor com<br />contenção.</h2>
+          <p>
+            O marfim é a base de leitura. O verde inglês estrutura a identidade.
+            Bordô traz profundidade; couro e latão entram como detalhes. A
+            proporção orienta o conjunto das peças, sem exigir a presença das
+            cinco cores em cada aplicação.
+          </p>
+        </div>
+        <div
+          class="palette-ribbon"
+          role="img"
+          aria-label="Proporção sugerida: marfim 50%, verde inglês 30%, bordô 10%, couro 5% e latão 5%"
+        >
+          <div class="p1">50%</div>
+          <div class="p2">30%</div>
+          <div class="p3">10%</div>
+          <div class="p4">5%</div>
+          <div class="p5">5%</div>
+        </div>
+        <p class="small">
+          Proporção sugerida para o sistema visual. Áreas vazias contam como cor
+          de fundo.
+        </p>
+        <div class="palette-list">
+          <article>
+            <div class="swatch" style="background: #f2ece1"></div>
+            <h3>Marfim</h3>
+            <p class="values">HEX #F2ECE1<br />RGB 242 · 236 · 225</p>
+            <p>Fundos, papelaria e texto em superfícies escuras.</p>
+          </article>
+          <article>
+            <div class="swatch" style="background: #1e2b23"></div>
+            <h3>Verde inglês</h3>
+            <p class="values">HEX #1E2B23<br />RGB 30 · 43 · 35</p>
+            <p>Marca principal, títulos e campos institucionais.</p>
+          </article>
+          <article>
+            <div class="swatch" style="background: #5e1e2a"></div>
+            <h3>Bordô</h3>
+            <p class="values">HEX #5E1E2A<br />RGB 94 · 30 · 42</p>
+            <p>Aplicações de presença, ícones e acentos.</p>
+          </article>
+          <article>
+            <div class="swatch" style="background: #7a5c33"></div>
+            <h3>Couro</h3>
+            <p class="values">HEX #7A5C33<br />RGB 122 · 92 · 51</p>
+            <p>Texto secundário sobre marfim e detalhes.</p>
+          </article>
+          <article>
+            <div class="swatch" style="background: #d6be8e"></div>
+            <h3>Latão</h3>
+            <p class="values">HEX #D6BE8E<br />RGB 214 · 190 · 142</p>
+            <p>Marca sobre bordô e detalhes sobre fundos escuros.</p>
+          </article>
+        </div>
+        <div class="palette-note">
+          <p>
+            <strong>Leitura.</strong> Para textos corridos, use verde inglês
+            sobre marfim ou marfim sobre verde. Sobre bordô, prefira marfim.
+            Couro pode compor legendas sobre marfim; latão sobre marfim fica
+            restrito a detalhes decorativos.
+          </p>
+          <p>
+            <strong>Reprodução.</strong> Os valores HEX e RGB são equivalentes
+            em sRGB. Para produção gráfica, converta conforme o perfil de
+            impressão e valide uma prova no suporte escolhido; evite conversões
+            CMYK genéricas.
+          </p>
+        </div>
+      </section>
+      <section class="chapter wrap" id="tipografia">
+        <div class="intro">
+          <h2>Três vozes.<br />Uma hierarquia.</h2>
+          <p>
+            Bodoni Moda dá forma aos títulos. Pinyon Script acrescenta um gesto
+            pontual. Montserrat organiza a leitura e as informações práticas. As
+            três famílias estão disponíveis no Google Fonts sob licença SIL Open
+            Font License.
+          </p>
+        </div>
+        <div class="type-showcase">
+          <div>
+            <p class="type-sample">Aa Bb Cc<br />João &amp; razão.</p>
+            <p class="type-script">Oliveira</p>
+            <p class="type-mont">ADVOCACIA · 0123456789</p>
+          </div>
+          <div class="type-info">
+            <p>
+              <strong>Bodoni Moda · 400 / 500</strong><br />Display e títulos.
+              Na marca em curvas: peso 500, eixo óptico 18, para preservar os
+              fios finos na reprodução.
+            </p>
+            <p>
+              <strong>Pinyon Script · 400</strong><br />Acento e assinatura.
+              Reserve para uma palavra curta ou um gesto editorial. Não usar em
+              parágrafos, menus ou caixa alta.
+            </p>
+            <p>
+              <strong>Montserrat · 400 / 500 / 600</strong><br />Corpo,
+              navegação, botões e legendas. Use 400 no texto, 500 em rótulos e
+              600 para ênfase.
+            </p>
+            <p>
+              <a href="https://fonts.google.com/specimen/Bodoni+Moda"
+                >Bodoni Moda</a
+              >
+              ·
+              <a href="https://fonts.google.com/specimen/Pinyon+Script"
+                >Pinyon Script</a
+              >
+              ·
+              <a href="https://fonts.google.com/specimen/Montserrat"
+                >Montserrat</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          class="hierarchy"
+          aria-label="Hierarquia tipográfica sugerida para o site"
+        >
+          <div class="hierarchy-row">
+            <p class="meta">
+              <strong>H1 · Bodoni Moda 500</strong><br />72 / 44 px · entrelinha
+              1,08<br />Desktop / celular
+            </p>
+            <p class="h1-demo">Clareza em cada decisão.</p>
+          </div>
+          <div class="hierarchy-row">
+            <p class="meta">
+              <strong>H2 · Bodoni Moda 500</strong><br />48 / 34 px · entrelinha
+              1,12
+            </p>
+            <p class="h2-demo">Uma atuação próxima.</p>
+          </div>
+          <div class="hierarchy-row">
+            <p class="meta">
+              <strong>H3 · Bodoni Moda 500</strong><br />32 / 26 px · entrelinha
+              1,20
+            </p>
+            <p class="h3-demo">Informação que orienta.</p>
+          </div>
+          <div class="hierarchy-row">
+            <p class="meta">
+              <strong>Corpo · Montserrat 400</strong><br />16 px · entrelinha
+              1,70<br />Medida preferencial: 60–68 caracteres
+            </p>
+            <p class="body-demo">
+              A leitura deve ser simples, confortável e precisa. Parágrafos
+              curtos e uma hierarquia clara dão espaço à informação, sem
+              disputar atenção com o conteúdo.
+            </p>
+          </div>
+          <div class="hierarchy-row">
+            <p class="meta">
+              <strong>Rótulo · Montserrat 500</strong><br />12 px · entrelinha
+              1,50<br />Espaçamento 0,16 em
+            </p>
+            <p class="label-demo">Entre em contato</p>
+          </div>
+          <div class="hierarchy-row">
+            <p class="meta">
+              <strong>Legenda · Montserrat 400</strong><br />14 px · entrelinha
+              1,60
+            </p>
+            <p style="font-size: 14px">
+              Informações complementares com o mesmo cuidado de leitura.
+            </p>
+          </div>
+        </div>
+        <p class="notice">
+          As frases acima são amostras tipográficas, sem compromisso de texto
+          para o site. Nos títulos do site, ajuste o tamanho com
+          <code>clamp()</code>; preserve o corpo em pelo menos 16 px. As marcas
+          vetoriais não devem ser recompostas com texto HTML.
+        </p>
+      </section>
+      <section class="chapter applications" id="aplicacoes">
+        <div class="wrap">
+          <div class="intro">
+            <h2>A identidade<br />em uso.</h2>
+            <p>
+              A mesma disciplina acompanha a marca no papel e na tela: cor
+              plana, bom contraste, informação essencial e áreas generosas de
+              silêncio. As aplicações abaixo são estudos de composição.
+            </p>
+          </div>
+          <div class="cards">
+            <figure>
+              <div class="business-card card-front">
+                <img
+                  src="logo/monograma-latao-bordo.svg"
+                  alt="Frente do cartão: monograma JO em latão sobre bordô"
+                />
+              </div>
+              <figcaption class="caption">
+                Cartão · Frente. Formato sugerido: 90 × 50 mm. Monograma
+                centralizado, sem informação concorrente.
+              </figcaption>
+            </figure>
+            <figure>
+              <div class="business-card card-back">
+                <img
+                  src="logo/assinatura-verde-marfim.svg"
+                  alt="Verso do cartão: assinatura João Victor Oliveira Advocacia"
+                />
+                <div class="contact">
+                  João Victor Martins de Oliveira<br />Advogado · Curitiba /
+                  PR<br />[e-mail profissional] · [telefone]
+                </div>
+              </div>
+              <figcaption class="caption">
+                Cartão · Verso. Marfim e verde inglês. Em produção, inserir os
+                contatos e o número OAB/PR confirmados.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="application-detail">
+            <figure>
+              <div class="email-preview">
+                <img
+                  src="logo/monograma-verde-marfim.svg"
+                  alt="Monograma na assinatura de e-mail"
+                />
+                <div class="email-copy">
+                  <strong>João Victor Martins de Oliveira</strong>Advogado ·
+                  OAB/PR [número]<br />Curitiba, Paraná<br />[e-mail
+                  profissional]<br />[telefone]
+                </div>
+              </div>
+              <figcaption class="caption">
+                E-mail · Texto real, selecionável e acessível, ao lado do
+                monograma. Para clientes de e-mail, exportar o SVG em PNG na
+                escala 2× e hospedar em HTTPS.
+              </figcaption>
+            </figure>
+            <figure>
+              <div class="avatar-preview">
+                <img
+                  src="logo/favicon-512.png"
+                  alt="Avatar circular com monograma JO em latão sobre bordô"
+                  width="150"
+                  height="150"
+                />
+                <p class="small">
+                  Instagram<br /><strong>Monograma isolado.</strong
+                  ><br />Leitura antes do nome.
+                </p>
+              </div>
+              <figcaption class="caption">
+                Avatar · Arquivo quadrado de 512 px. O respiro interno protege o
+                desenho no recorte circular.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="icon-downloads">
+            <a href="logo/favicon.svg" download>Favicon SVG</a
+            ><a href="logo/favicon-32.png" download>PNG 32 px</a
+            ><a href="logo/apple-touch-icon.png" download>Apple touch 180 px</a
+            ><a href="logo/favicon-512.png" download>PNG 512 px</a>
+          </div>
+          <p
+            class="notice"
+            style="
+              border-color: color-mix(in srgb, var(--ivory) 28%, transparent);
+            "
+          >
+            Os campos entre colchetes são dados pendentes, não contatos reais.
+            As aplicações não estão prontas para envio à gráfica ou publicação
+            até o preenchimento e a conferência dessas informações.
+          </p>
+        </div>
+      </section>
+      <section class="chapter wrap" aria-labelledby="nao-fazer">
+        <div class="intro">
+          <h2 id="nao-fazer">O que preservar.</h2>
+          <p>
+            A força da identidade está na constância do desenho. As intervenções
+            abaixo prejudicam sua leitura e não fazem parte do sistema.
+          </p>
+        </div>
+        <div class="bad-grid">
+          <article class="bad">
+            <div class="bad-visual distort">
+              <img
+                src="logo/monograma-marfim-verde.svg"
+                alt="Exemplo incorreto: monograma alargado"
+              />
+            </div>
+            <h3>Não distorcer.</h3>
+            <p>
+              Escalone proporcionalmente, preservando a relação entre largura e
+              altura.
+            </p>
+          </article>
+          <article class="bad">
+            <div class="bad-visual rotate">
+              <img
+                src="logo/monograma-marfim-verde.svg"
+                alt="Exemplo incorreto: monograma inclinado"
+              />
+            </div>
+            <h3>Não inclinar.</h3>
+            <p>
+              O eixo vertical mantém a estabilidade do desenho e das
+              composições.
+            </p>
+          </article>
+          <article class="bad">
+            <div class="bad-visual effect">
+              <img
+                src="logo/monograma-marfim-verde.svg"
+                alt="Exemplo incorreto: monograma com sombra"
+              />
+            </div>
+            <h3>Não aplicar efeitos.</h3>
+            <p>
+              Evite sombra, relevo digital, contorno, degradê ou brilho sobre a
+              marca.
+            </p>
+          </article>
+          <article class="bad">
+            <div class="bad-visual wrong-color">
+              <img
+                src="logo/monograma-verde-marfim.svg"
+                alt="Exemplo incorreto: cor fora da paleta"
+              />
+            </div>
+            <h3>Não improvisar cores.</h3>
+            <p>
+              Use as combinações fornecidas, sem recolorir letras ou partes
+              isoladas.
+            </p>
+          </article>
+          <article class="bad">
+            <div class="bad-visual low-contrast">
+              <img
+                src="logo/monograma-latao-bordo.svg"
+                alt="Exemplo incorreto: latão sem contraste sobre fundo latão"
+              />
+            </div>
+            <h3>Não perder contraste.</h3>
+            <p>
+              Latão pede fundo escuro. Evite fotografias e texturas que
+              atravessem o desenho.
+            </p>
+          </article>
+          <article class="bad">
+            <div class="bad-visual encroach">
+              <img
+                src="logo/monograma-marfim-verde.svg"
+                alt="Exemplo incorreto: texto invadindo a marca"
+              /><span aria-hidden="true">Advocacia</span>
+            </div>
+            <h3>Não invadir o respiro.</h3>
+            <p>
+              Respeite a proteção e não altere as distâncias internas das
+              composições.
+            </p>
+          </article>
+        </div>
+        <p class="notice">
+          Não substitua o JO oficial pelo desenho de qualquer exploração
+          anterior. Não troque as fontes da assinatura, remova o til de “João”
+          ou crie novas relações entre o nome e “ADVOCACIA”.
+        </p>
+      </section>
+      <section class="chapter wrap files" id="arquivos">
+        <div>
+          <h2>Pronto para<br />seguir adiante.</h2>
+          <p>
+            Os arquivos vetoriais são a origem para as aplicações da marca.
+            Preserve uma cópia sem alterações e use sempre a versão adequada à
+            cor do fundo.
+          </p>
+          <p class="small" style="margin-top: 22px">
+            SVGs em curvas · Fundo transparente nas marcas<br />PNG em sRGB ·
+            Ícones com fundo bordô<br />Sem fontes incorporadas nos logos
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#versoes"
+                ><span>15 marcas vetoriais</span
+                ><span>3 peças × 5 cores</span></a
+              >
+            </li>
+            <li>
+              <a href="logo/favicon.svg" download
+                ><span>Favicon vetorial</span><span>SVG</span></a
+              >
+            </li>
+            <li>
+              <a href="logo/favicon-32.png" download
+                ><span>Favicon</span><span>32 × 32 PNG</span></a
+              >
+            </li>
+            <li>
+              <a href="logo/apple-touch-icon.png" download
+                ><span>Apple touch</span><span>180 × 180 PNG</span></a
+              >
+            </li>
+            <li>
+              <a href="logo/favicon-512.png" download
+                ><span>Ícone e avatar</span><span>512 × 512 PNG</span></a
+              >
+            </li>
+            <li>
+              <a href="tokens.css" download
+                ><span>Cores e tipografia do site</span
+                ><span>tokens.css</span></a
+              >
+            </li>
+          </ul>
+          <p class="small" style="margin-top: 22px">
+            Este manual funciona sem JavaScript. As fontes da página carregam do
+            Google Fonts; os logos permanecem íntegros mesmo sem conexão.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <span>João Victor Oliveira · Advocacia</span
+      ><span>Manual de identidade · Direção A / Old Money</span
+      ><a href="#conteudo">Voltar ao início do manual</a>
+    </footer>
+  </body>
+</html>

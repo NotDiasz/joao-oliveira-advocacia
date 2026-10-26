@@ -1,0 +1,80 @@
+# Explorações de logo — João Oliveira
+
+12 explorações em PNG, 1024×1024. A5 e A6 complementam as dez peças enumeradas no briefing, com autorização do coordenador em 2026-10-26. Os prompts abaixo são os textos completos usados na ferramenta de geração de imagem integrada, com fundo opaco.
+
+A ferramenta retornou originais de 1254×1254; a exportação final foi reamostrada para 1024×1024 com interpolação bicúbica, sem redesenho de letras ou símbolos. As referências a fontes descrevem a direção visual, sem garantir correspondência exata ao arquivo tipográfico dessas famílias. A geração apresenta pequenas variações tonais nos preenchimentos, apesar do pedido de cores planas; estes arquivos são explorações de marca.
+
+Todos os resultados foram conferidos visualmente quanto às letras, acentos, legibilidade e composição. B1 mantém o “Jo” previsto nessa direção; D2 mantém as versaletes e “Advocacia” em caixa mista previstas nessa direção.
+
+## A1 — a1-monograma.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. A1 OLD MONEY: interlaced uppercase JO monogram only. Bespoke high contrast Bodoni Didone J combined with an elegant calligraphic O inspired by Pinyon/Sloop, controlled fine hairlines and beautiful negative spaces; both letters legible. Deep English green #1E2B23 ink on flat ivory #F2ECE1. Only text: JO.
+```
+
+## A2 — a2-selo.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. A2 OLD MONEY: circular seal, compact intertwined uppercase JO in the center in bespoke high contrast Didone and restrained calligraphy. Two very delicate laurel sprigs flank the central monogram inside a double thin circular border, no crown. Along the upper outer arc render exactly ADVOCACIA and along the lower outer arc render exactly OAB/PR, with small middle dot separators on either side. Perfectly readable elegant spaced sans small capitals inspired by Montserrat. Flat brass #D6BE8E on perfectly uniform English green #1E2B23. ONLY text: JO, ADVOCACIA, OAB/PR.
+```
+
+## A3 — a3-wordmark.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. A3 OLD MONEY: a horizontal wordmark centered within the square. Exact first name João Victor in elegant high contrast Bodoni Didone, followed on the same baseline by Oliveira in exceptionally refined flowing Pinyon/Sloop formal calligraphy. Beneath, center the exact word ADVOCACIA in small widely tracked Montserrat-like sans capitals. Keep all three words fully readable with the tilde over the ã in João unmistakable. Perfectly flat solid green #1E2B23 on a perfectly flat solid ivory #F2ECE1 field. No noise or shading. ONLY text: João Victor Oliveira, ADVOCACIA.
+```
+
+## A4 — a4-lockup.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. A4 OLD MONEY: centered vertical lockup. A small sophisticated interwoven uppercase JO Didone/calligraphic monogram above. Underneath a single line exact text JOÃO OLIVEIRA in elegant high contrast Bodoni capitals; the Ã must have a clearly visible tilde. Below the name, ADVOCACIA in smaller widely tracked clean sans capitals. Beautiful hierarchy, main name large enough to read, refined restrained layout. Perfectly uniform solid ivory #F2ECE1 ink on perfectly uniform solid burgundy #5E1E2A background. ONLY text: JO, JOÃO OLIVEIRA, ADVOCACIA.
+```
+
+## A5 — a5-monograma-bordo.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. A5 OLD MONEY extra approved variation: exceptionally refined uppercase JO monogram inspired by a traditional bespoke tailor or fine jeweler, high contrast Bodoni Didone J interlaced with a restrained formal calligraphic O, balanced and legible as just two letters. More compact and symmetrical than an open script wordmark, sophisticated custom ligature. Flat brass #D6BE8E on perfectly solid burgundy #5E1E2A. No border, no ornaments, only JO. Completely flat fills with no grain, texture, light or shading.
+```
+
+## A6 — a6-ex-libris.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. A6 OLD MONEY extra approved variation: ex-libris-inspired uppercase JO monogram, finely drawn custom Bodoni Didone intertwined with subtle formal calligraphic flourishes, framed by a slim elegant upright oval cartouche with two restrained symmetric ornamental terminals, exquisite traditional bookplate design without any book illustration. Flat leather-brown #7A5C33 ink on perfectly solid ivory #F2ECE1. Only text JO, do not write ex libris or any other words. Sophisticated restrained geometry, the J and O clearly distinguishable, ample clear space. No texture or aged paper.
+```
+
+## B1 — b1-monograma.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. B1 NOIR & MAGENTA: a modern editorial monogram Jo, a capital J and lowercase o, inspired by contemporary Fraunces serif lettering, assertive sculptural serifs and intelligently joined geometry, no script and no calligraphic swashes. J in off-white #EDEAE5, o in deep magenta #A3195B, on absolutely uniform graphite #131315 background. Only text Jo. Make the two letters immediately legible, compact and ownable. Flat fills, absolutely no surface noise.
+```
+
+## B2 — b2-wordmark.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. B2 NOIR & MAGENTA: premium contemporary editorial wordmark, exact text João Oliveira on one horizontal line centered. João in off-white #EDEAE5 upright Fraunces-like contemporary serif; Oliveira in magenta #A3195B true serif italic, absolutely no cursive script or flourishes. Correct prominent tilde over ã, optical kerning, sufficient visible word spacing, restrained distinguished proportions. Pure uniform graphite #131315 background. Only text João Oliveira. No descriptors or other text.
+```
+
+## C1 — c1-brasao.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. C1 VERDE TRIBUNAL: a distinguished small heraldic shield with interwoven uppercase JO, classic Cormorant Garamond-style lettering, fine linework with the delicacy of engraving but executed as completely flat solid old gold #C9A66B ink. Slim double shield outline, strong elegant simple contours, poised vertical balance. No crown, no animal, no scales. Absolutely solid forest green #0F2620 background. Only text JO. No lighting, no metallic effect, no dimensional engraving, no texture.
+```
+
+## C2 — c2-wordmark.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. C2 VERDE TRIBUNAL: classic Garamond wordmark inspired by Cormorant, exact name João Victor de Oliveira. Centered two lines, first line João Victor in refined upright Garamond, second line de Oliveira in beautifully readable Garamond italic, not script. Clear tilde over ã in João. Calm legal authority, balanced width, generous margins, distinctive optical spacing. Uniform flat forest green #0F2620 ink on uniform flat warm paper-color #EFE7D6 background; paper is a COLOR only, absolutely no paper texture. ONLY text João Victor de Oliveira.
+```
+
+## D1 — d1-monograma.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. D1 PEDRA & TINTA: austere block stamp-style JO monogram, architectural compact bold Playfair Small Caps-inspired serif letters, clean fresh ink contours, no distress. The two uppercase characters JO must be unmistakable. A precise square thin black border gives it the discipline of an old newspaper publisher's colophon, with generous space around the compact stamp. Solid ink black #111111 on absolutely uniform stone #F7F5F0 background. No ornament, no laurels, no script, no other text. Crisp flat graphic artwork.
+```
+
+## D2 — d2-wordmark.png
+
+```text
+Use case: logo-brand. Create one exceptional branding studio logo exploration for a premium Brazilian attorney in Curitiba. Square 1024x1024 PNG, centered logo, generous negative space, flawless crisp flat vector-like edges. The aesthetic is bespoke tailoring, traditional fine jewelry and ex-libris, technically assured and restrained, sophisticated optical spacing and deliberate proportions. Uniform solid background only. No mockup, photography, paper texture, distress, gradients, 3D, shadows, fake metallic shine, scales of justice, gavels, Greek pillars, clip-art, watermark, extra captions or extra letters. Render ONLY the text specifically requested below, precisely preserving Portuguese accents. D2 PEDRA & TINTA: austere newspaper editorial wordmark, centered. Exact main text JOÃO OLIVEIRA in custom Playfair Small Caps-style serif capitals, ink black #111111, exceptional kerning and a clear tilde over Ã. Under the main name a fine horizontal black rule with deliberate breathing room. Below the rule exact word Advocacia in true serif italic in wax-burgundy #5B1F24; not cursive script. Perfectly uniform solid stone #F7F5F0 background. Only text JOÃO OLIVEIRA and Advocacia. Precise high-end typographic restraint, no symbol.
+```
+
