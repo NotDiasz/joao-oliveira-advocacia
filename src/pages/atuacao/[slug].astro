@@ -1,0 +1,120 @@
+---
+import Base from "../../layouts/Base.astro";
+import Arrow from "../../components/Arrow.astro";
+import Contact from "../../components/Contact.astro";
+import { areas } from "../../data/areas";
+import { whatsappUrl } from "../../data/site";
+export function getStaticPaths() {
+  return areas.map((area) => ({
+    params: { slug: area.slug },
+    props: { area },
+  }));
+}
+const { area } = Astro.props;
+---
+
+<Base title={`${area.name} — João Oliveira Advocacia`} description={area.intro}>
+  <section class="area-hero section-shell">
+    <a class="back-link eyebrow" href="/#atuacao">
+      ← TODAS AS ÁREAS
+    </a>
+    <div class="area-hero-content">
+      <span class="area-hero-numeral" aria-hidden="true">
+        {area.numeral}
+      </span>
+      <div>
+        <span class="eyebrow">ÁREA DE ATUAÇÃO</span>
+        <h1 data-reveal>{area.name}.</h1>
+        <p>{area.intro}</p>
+        <a class="button" href={whatsappUrl}>
+          Conversar sobre o meu caso <Arrow diagonal />
+        </a>
+      </div>
+    </div>
+    <div class="area-hero-bottom eyebrow">
+      <span>JOÃO OLIVEIRA · ADVOCACIA</span>
+      <a href="#quando-procurar">CONHEÇA A ATUAÇÃO ↓</a>
+    </div>
+  </section>
+  <section id="quando-procurar" class="area-situations section-shell">
+    <div>
+      <span class="eyebrow">[ RECONHECER O MOMENTO ]</span>
+      <h2 data-reveal>
+        Quando
+        <br />
+        <em>procurar.</em>
+      </h2>
+      <p>Algumas situações em que a orientação jurídica pode ajudar.</p>
+    </div>
+    <ol>
+      {area.situations.map((situation, i) => (
+        <li>
+          <span>0{i + 1}</span>
+          <h3>{situation}</h3>
+        </li>
+      ))}
+    </ol>
+  </section>
+  <section class="area-approach section-shell">
+    <div class="section-heading">
+      <span class="eyebrow">[ O TRABALHO ]</span>
+      <h2 data-reveal>
+        Como <em>atuo.</em>
+      </h2>
+      <p>
+        Uma análise individual.
+        <br />
+        Um caminho explicado com clareza.
+      </p>
+    </div>
+    <div class="approach-items">
+      {area.approach.map((item, i) => (
+        <article>
+          <span class="step-number">0{i + 1}</span>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="faq-section section-shell">
+    <div class="faq-heading">
+      <span class="eyebrow">[ DÚVIDAS DA ÁREA ]</span>
+      <h2 data-reveal>
+        Para
+        <br />
+        <em>entender.</em>
+      </h2>
+    </div>
+    <div class="faq-list">
+      {area.faqs.map((faq, i) => (
+        <details>
+          <summary>
+            <span class="faq-number">0{i + 1}</span>
+            <h3>{faq.question}</h3>
+            <span class="faq-plus" aria-hidden="true"></span>
+          </summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+  <Contact />
+  <section class="other-areas section-shell">
+    <span class="eyebrow">CONTINUE CONHECENDO</span>
+    <h2>
+      Outras <em>frentes.</em>
+    </h2>
+    <div>
+      {areas
+        .filter((other) => other.slug !== area.slug)
+        .map((other) => (
+          <a href={`/atuacao/${other.slug}`}>
+            <span class="other-numeral">{other.numeral}</span>
+            <h3>{other.name}</h3>
+            <Arrow diagonal />
+          </a>
+        ))}
+    </div>
+  </section>
+</Base>

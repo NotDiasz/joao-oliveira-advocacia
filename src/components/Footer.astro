@@ -1,0 +1,32 @@
+---
+import Logo from "./Logo.astro";
+import { areas } from "../data/areas";
+import { site } from "../data/site";
+---
+
+<footer id="rodape" class="site-footer">
+  <div class="footer-main">
+    <a href="/" class="footer-lockup" aria-label="Voltar ao início">
+      <Logo kind="lockup" />
+    </a>
+    <nav aria-label="Áreas de atuação">
+      {areas.map((area) => (
+        <a href={`/atuacao/${area.slug}`}>{area.name}</a>
+      ))}
+    </nav>
+    <div class="footer-info">
+      <span>Curitiba · Paraná</span>
+      <span>{site.oab}</span>
+      <a href={site.instagramUrl} target="_blank" rel="noopener noreferrer">
+        {site.instagram}
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>
+      © {new Date().getFullYear()} {site.fullName}
+    </span>
+    <span>Informação, responsabilidade e presença.</span>
+    <a href="#conteudo">Voltar ao topo ↑</a>
+  </div>
+</footer>

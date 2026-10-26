@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+interface Props {
+  src: string;
+  alt: string;
+  class?: string;
+  eager?: boolean;
+  widths?: number[];
+  sizes?: string;
+}
+const {
+  src,
+  alt,
+  class: className = "",
+  eager = false,
+  widths = [240, 480, 800, 1200],
+  sizes: sizesProp,
+} = Astro.props;
+const media = import.meta.glob<{ default: ImageMetadata }>(
+  "../../public/media/**/*.webp",
+  { eager: true },
+);
+const image = media[`../../public${src}`]?.default;
+const sizes =
+  sizesProp ??
+  (eager ? "(max-width: 899px) 60vw, 45vw" : "(max-width: 899px) 50vw, 36vw");
+---
+
+{image ? (
+  <Image
+    class:list={["media", className]}
+    src={image}
+    alt={alt}
+    widths={widths}
+    sizes={sizes}
+    format="webp"
+    loading={eager ? "eager" : "lazy"}
+    fetchpriority={eager ? "high" : "auto"}
+    decoding="async"
+  />
+) : (
+  <div
+    class:list={["media-placeholder", className]}
+    role="img"
+    aria-label={alt}
+  />
+)}

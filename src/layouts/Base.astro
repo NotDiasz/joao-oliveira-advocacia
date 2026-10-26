@@ -1,0 +1,105 @@
+---
+import { ClientRouter } from "astro:transitions";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { site } from "../data/site";
+import "@fontsource/bodoni-moda/latin-400.css";
+import "@fontsource/bodoni-moda/latin-500.css";
+import "@fontsource/bodoni-moda/latin-400-italic.css";
+import "@fontsource/pinyon-script/latin-400.css";
+import "@fontsource/montserrat/latin-400.css";
+import "@fontsource/montserrat/latin-500.css";
+import "../styles/global.css";
+import displayFont from "@fontsource/bodoni-moda/files/bodoni-moda-latin-400-normal.woff2?url";
+import bodyFont from "@fontsource/montserrat/files/montserrat-latin-400-normal.woff2?url";
+import scriptFont from "@fontsource/pinyon-script/files/pinyon-script-latin-400-normal.woff2?url";
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = `${site.name} — Advocacia em Curitiba`,
+  description = site.description,
+} = Astro.props;
+const canonical = site.url
+  ? new URL(Astro.url.pathname, site.url).href
+  : undefined;
+const structured = {
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  name: site.fullName,
+  description,
+  telephone: site.whatsapp,
+  email: site.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: site.address,
+    addressLocality: site.city,
+    addressRegion: site.state,
+    addressCountry: "BR",
+  },
+  identifier: site.oab,
+  sameAs: [site.instagramUrl],
+  ...(site.url ? { url: site.url } : {}),
+};
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0E1511" />
+    <link
+      rel="preload"
+      href={displayFont}
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href={bodyFont}
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href={scriptFont}
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonical && (
+      <>
+        <link rel="canonical" href={canonical} />
+        <meta property="og:url" content={canonical} />
+      </>
+    )}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(structured).replace(/</g, "\\u003c")}
+    />
+    <ClientRouter />
+  </head>
+  <body>
+    <Header />
+    <main id="conteudo">
+      <slot />
+    </main>
+    <Footer />
+    <div class="page-curtain" aria-hidden="true"></div>
+    <script>
+      import "../scripts/motion";
+    </script>
+  </body>
+</html>

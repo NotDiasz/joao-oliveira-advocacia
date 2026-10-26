@@ -1,0 +1,48 @@
+---
+import Media from "./Media.astro";
+import Arrow from "./Arrow.astro";
+import { site, whatsappUrl, emailUrl } from "../data/site";
+---
+
+<section
+  id="contato"
+  class="contact section-shell"
+  aria-labelledby="contact-title"
+>
+  <div class="contact-top">
+    <span class="eyebrow">(07) — CONTATO</span>
+    <span class="eyebrow">CURITIBA · PARANÁ</span>
+  </div>
+  <div class="contact-copy">
+    <h2 id="contact-title" data-reveal>
+      Vamos conversar
+      <br />
+      sobre <em>o seu caso.</em>
+    </h2>
+    <p>
+      Cada situação tem a sua história.
+      <br />O primeiro passo é ouvir a sua.
+    </p>
+    <div class="contact-actions">
+      <a class="button button-light" href={whatsappUrl}>
+        Conversar pelo WhatsApp <Arrow diagonal />
+      </a>
+      <a class="text-link" href={emailUrl}>
+        Enviar um e-mail <Arrow diagonal />
+      </a>
+    </div>
+  </div>
+  <Media
+    class="contact-seal"
+    src="/media/objetos/lacre.webp"
+    alt="Lacre de cera com o monograma João Oliveira"
+  />
+  <div class="contact-details">
+    <span>{site.whatsapp}</span>
+    <span>{site.email}</span>
+    <span>{site.address}</span>
+    <a href={site.instagramUrl} target="_blank" rel="noopener noreferrer">
+      {site.instagram}
+    </a>
+  </div>
+</section>

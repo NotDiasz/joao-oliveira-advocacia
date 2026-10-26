@@ -1,0 +1,291 @@
+---
+import { Image } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import Logo from "../components/Logo.astro";
+import Arrow from "../components/Arrow.astro";
+import Media from "../components/Media.astro";
+import AreasCarousel from "../components/AreasCarousel";
+import Contact from "../components/Contact.astro";
+import tribunal from "../../brand/fotos/joao-tribunal.png";
+import { site, whatsappUrl, homeFaqs } from "../data/site";
+---
+
+<Base>
+  <div class="preloader" aria-hidden="true">
+    <Logo class="preloader-logo" />
+    <span>JOÃO OLIVEIRA · ADVOCACIA</span>
+  </div>
+  <section id="inicio" class="hero section-shell" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="hero-script">Advocacia</p>
+      <h1 id="hero-title">
+        <span class="title-mask">
+          <span>João</span>
+        </span>
+        <span class="title-mask">
+          <span>
+            Oliveira<span class="hero-dot">.</span>
+          </span>
+        </span>
+      </h1>
+      <p class="hero-areas">
+        Previdenciário · Saúde
+        <br class="mobile-only" /> · Criminal · Prerrogativas
+      </p>
+      <a class="button" href={whatsappUrl}>
+        Agendar consulta <Arrow diagonal />
+      </a>
+    </div>
+    <div class="hero-backdrop">
+      <Media
+        src="/media/hero/joao-hero-v2.webp"
+        alt="João Victor Martins de Oliveira, advogado, de perfil"
+        eager
+        widths={[800, 1280, 1920, 2560]}
+        sizes="100vw"
+      />
+    </div>
+    <div class="hero-bottom">
+      <span class="eyebrow">RIGOR TÉCNICO. ATENÇÃO PESSOAL.</span>
+      <a class="scroll-cue" href="#metodo">
+        <span>ROLE PARA CONHECER</span>
+        <span class="scroll-line"></span>
+        <span>↓</span>
+      </a>
+    </div>
+  </section>
+  <section
+    id="metodo"
+    class="manifesto section-shell"
+    aria-labelledby="method-title"
+  >
+    <div class="manifesto-copy">
+      <span class="eyebrow">[ O MÉTODO ]</span>
+      <h2 id="method-title">
+        <span>RIGOR</span>
+        <span>TÉCNICO.</span>
+      </h2>
+      <p>
+        Cada caso começa pelo estudo: a lei, os documentos, a jurisprudência. A
+        estratégia vem depois, explicada em linguagem que você entende.
+      </p>
+    </div>
+    <div class="object-wrap">
+      <Media
+        class="manifesto-object book-object"
+        src="/media/objetos/livro.webp"
+        alt="Livro de Direito com capa em couro"
+      />
+    </div>
+    <span class="section-footnote">ESTUDO ANTES DE CADA PASSO.</span>
+  </section>
+  <section
+    id="compromisso"
+    class="manifesto manifesto-second section-shell"
+    aria-labelledby="commitment-title"
+  >
+    <div class="manifesto-copy">
+      <span class="eyebrow">[ O COMPROMISSO ]</span>
+      <h2 id="commitment-title">
+        <span>ATENÇÃO</span>
+        <span>PESSOAL.</span>
+      </h2>
+      <p>
+        Você fala diretamente com o advogado responsável pelo seu caso, do
+        primeiro contato à última decisão.
+      </p>
+    </div>
+    <div class="object-wrap">
+      <Media
+        class="manifesto-object pen-object"
+        src="/media/objetos/caneta.webp"
+        alt="Caneta de escrita em metal e latão"
+      />
+    </div>
+    <span class="section-footnote">PRESENÇA EM CADA ETAPA.</span>
+  </section>
+  <section
+    id="marca"
+    class="brand-section"
+    aria-label="A marca João Oliveira Advocacia"
+  >
+    <div class="brand-progress">
+      <span></span>
+    </div>
+    <div class="brand-outline" aria-hidden="true">
+      JOÃO OLIVEIRA — ADVOCACIA —
+    </div>
+    <div class="brand-base-logo">
+      <Logo />
+    </div>
+    {[
+      { color: "#1E2B23", name: "VERDE INGLÊS", ink: "#F2ECE1" },
+      { color: "#5E1E2A", name: "BORDÔ", ink: "#D6BE8E" },
+      { color: "#D6BE8E", name: "LATÃO", ink: "#1E2B23" },
+      { color: "#0E1511", name: "TINTA", ink: "#F2ECE1" },
+    ].map((palette, i) => (
+      <div
+        class={`brand-color-layer brand-layer-${i}`}
+        style={`--band-color:${palette.color};--band-ink:${palette.ink}`}
+      >
+        <div class="brand-band"></div>
+        <div class="brand-inverted-logo">
+          <Logo />
+        </div>
+        <span class="brand-palette eyebrow">
+          {palette.name} · {palette.color}
+        </span>
+      </div>
+    ))}
+    <div class="brand-bottom eyebrow">
+      <span>(02) — A MARCA</span>
+      <span>JOÃO OLIVEIRA</span>
+      <span>ADVOCACIA · CURITIBA</span>
+    </div>
+    <div class="brand-zoom" aria-hidden="true">
+      <Logo />
+    </div>
+  </section>
+  <section
+    id="atuacao"
+    class="areas-section section-shell"
+    aria-labelledby="areas-title"
+  >
+    <div class="areas-heading">
+      <span class="eyebrow">(03) — ATUAÇÃO</span>
+      <h2 id="areas-title">
+        QUATRO
+        <br />
+        <em>FRENTES.</em>
+      </h2>
+      <p>
+        Histórias diferentes.
+        <br />O mesmo cuidado com cada uma.
+      </p>
+      <span class="areas-direction eyebrow">
+        EXPLORE AS ÁREAS <span>↗</span>
+      </span>
+    </div>
+    <AreasCarousel client:load />
+  </section>
+  <section id="sobre" class="about section-shell" aria-labelledby="about-title">
+    <div class="about-photo" data-photo-reveal>
+      <Image
+        src={tribunal}
+        alt="João Oliveira de toga, em sessão no tribunal"
+        widths={[390, 640, 900]}
+        sizes="(max-width: 899px) 90vw, 43vw"
+        format="webp"
+        loading="lazy"
+      />
+      <span class="photo-caption eyebrow">
+        PRESENÇA. PREPARO. RESPONSABILIDADE.
+      </span>
+    </div>
+    <div class="about-copy">
+      <span class="eyebrow">(04) — O ADVOGADO</span>
+      <h2 id="about-title" data-reveal>
+        João Victor
+        <br />
+        Martins de
+        <br />
+        <em>Oliveira.</em>
+      </h2>
+      <p>
+        O direito começa com uma boa escuta. Entender o que importa para você é
+        parte do trabalho — assim como estudar com profundidade e explicar cada
+        caminho com clareza.
+      </p>
+      <p>
+        Atuação em Curitiba, nas áreas previdenciária, médica e da saúde,
+        criminal e na defesa das prerrogativas da advocacia.
+      </p>
+      <span class="about-oab eyebrow">ADVOGADO · {site.oab}</span>
+      <Logo
+        kind="signature"
+        class="about-signature"
+        label="Assinatura João Oliveira"
+      />
+    </div>
+  </section>
+  <section
+    id="atendimento"
+    class="process section-shell"
+    aria-labelledby="process-title"
+  >
+    <div class="section-heading">
+      <span class="eyebrow">(05) — COMO FUNCIONA</span>
+      <h2 id="process-title" data-reveal>
+        Clareza em
+        <br />
+        <em>cada passo.</em>
+      </h2>
+      <p>
+        Do primeiro contato ao acompanhamento,
+        <br />
+        você entende o que está acontecendo.
+      </p>
+    </div>
+    <div class="process-steps">
+      <div class="process-line">
+        <span></span>
+      </div>
+      {[
+        {
+          title: "Primeira conversa",
+          text: "Um espaço para ouvir a sua história e entender o que você precisa.",
+        },
+        {
+          title: "Análise",
+          text: "Documentos, fatos e legislação. O estudo que orienta cada decisão.",
+        },
+        {
+          title: "Estratégia",
+          text: "Caminhos possíveis, riscos e próximos passos explicados com clareza.",
+        },
+        {
+          title: "Acompanhamento",
+          text: "Informação e contato direto ao longo de todas as etapas.",
+        },
+      ].map((step, i) => (
+        <article>
+          <span class="step-number">0{i + 1}</span>
+          <h3>{step.title}</h3>
+          <p>{step.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section
+    id="duvidas"
+    class="faq-section section-shell"
+    aria-labelledby="faq-title"
+  >
+    <div class="faq-heading">
+      <span class="eyebrow">(06) — DÚVIDAS FREQUENTES</span>
+      <h2 id="faq-title" data-reveal>
+        Antes de
+        <br />
+        <em>conversarmos.</em>
+      </h2>
+      <p>
+        Algumas respostas para
+        <br />
+        os seus primeiros passos.
+      </p>
+    </div>
+    <div class="faq-list">
+      {homeFaqs.map((faq, i) => (
+        <details>
+          <summary>
+            <span class="faq-number">0{i + 1}</span>
+            <h3>{faq.question}</h3>
+            <span class="faq-plus" aria-hidden="true"></span>
+          </summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+  <Contact />
+</Base>

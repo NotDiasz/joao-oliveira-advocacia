@@ -1,0 +1,39 @@
+/* João Victor Oliveira · Advocacia
+   Importe as fontes do Google Fonts no documento antes de usar estes tokens.
+   Bodoni Moda 400/500 · Pinyon Script 400 · Montserrat 400/500/600 · licença OFL.
+   Os SVGs em logo/ já contêm letras em curvas e não dependem das fontes. */
+:root {
+  --color-marfim: #f2ece1;
+  --color-verde-ingles: #1e2b23;
+  --color-couro: #7a5c33;
+  --color-latao: #d6be8e;
+  --color-bordo: #5e1e2a;
+
+  --color-background: var(--color-marfim);
+  --color-surface-dark: var(--color-verde-ingles);
+  --color-text: var(--color-verde-ingles);
+  --color-text-inverse: var(--color-marfim);
+  --color-text-secondary: var(--color-couro);
+  --color-accent: var(--color-bordo);
+  --color-detail: var(--color-latao);
+  --color-focus: var(--color-bordo);
+
+  --font-display: "Bodoni Moda", "Bodoni MT", Didot, serif;
+  --font-accent: "Pinyon Script", cursive;
+  --font-body: "Montserrat", Arial, sans-serif;
+  --font-weight-display: 500;
+  --font-weight-body: 400;
+  --font-optical-size-brand: 18;
+  --font-size-h1: clamp(2.75rem, 5vw, 4.5rem);
+  --font-size-h2: clamp(2.125rem, 3.5vw, 3rem);
+  --font-size-h3: clamp(1.625rem, 2.5vw, 2rem);
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-label: 0.75rem;
+  --line-height-heading: 1.08;
+  --line-height-body: 1.7;
+  --letter-spacing-label: 0.16em;
+  --content-width: 75rem;
+  --reading-width: 68ch;
+  --space-unit: 0.5rem;
+}
