@@ -265,16 +265,19 @@ async function initialize() {
         4.85,
       );
     };
-    media.add("(min-width: 900px)", () => {
+    const animateManifestos = (distance: string, yStart: number, yEnd: number) => {
       gsap.utils.toArray<HTMLElement>(".manifesto").forEach((section) => {
         const lines = section.querySelectorAll("h2>span");
+        const object = section.querySelector<HTMLElement>(".manifesto-object");
+        const isPen = object?.classList.contains("pen-object") ?? false;
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: section,
             pin: true,
             start: "top top",
-            end: "+=90%",
+            end: distance,
             scrub: 0.65,
+            invalidateOnRefresh: true,
           },
         });
         tl.fromTo(
@@ -283,41 +286,34 @@ async function initialize() {
           { opacity: 1, stagger: 0.65, duration: 0.75, ease: "none" },
           0,
         );
-        tl.fromTo(
-          section.querySelector(".manifesto-object"),
-          { y: 45, rotation: -5 },
-          { y: -35, rotation: 4, duration: 2, ease: "none" },
-          0,
-        );
+        if (object) {
+          tl.fromTo(
+            object,
+            {
+              y: yStart,
+              rotation: isPen ? -20 : -6,
+              scale: 0.92,
+            },
+            {
+              y: yEnd,
+              rotation: isPen ? -8 : 4,
+              scale: 1.04,
+              duration: 2,
+              ease: "none",
+            },
+            0,
+          );
+        }
       });
+    };
 
+    media.add("(min-width: 900px)", () => {
+      animateManifestos("+=90%", 45, -35);
       animateBrandHandoff("+=320%");
     });
 
     media.add("(max-width: 899px)", () => {
-      gsap.utils.toArray<HTMLElement>(".manifesto").forEach((section) => {
-        gsap.from(section.querySelectorAll("h2>span"), {
-          y: 22,
-          stagger: 0.15,
-          duration: 1,
-          scrollTrigger: { trigger: section, start: "top 65%", once: true },
-        });
-        gsap.fromTo(
-          section.querySelector(".manifesto-object"),
-          { y: 25, rotation: -3 },
-          {
-            y: -25,
-            rotation: 3,
-            ease: "none",
-            scrollTrigger: {
-              trigger: section,
-              start: "top bottom",
-              end: "bottom top",
-              scrub: 0.6,
-            },
-          },
-        );
-      });
+      animateManifestos("+=75%", 26, -24);
       animateBrandHandoff("+=90%");
     });
 

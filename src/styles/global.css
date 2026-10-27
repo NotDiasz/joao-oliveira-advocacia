@@ -1,4 +1,4 @@
-﻿@import "./tokens.css";
+@import "./tokens.css";
 
 :root {
   --color-tinta: #0e1511;
@@ -454,6 +454,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: drop-shadow(0 26px 40px rgba(0, 0, 0, 0.48));
 }
 .object-wrap > .media-placeholder {
   height: 90%;
@@ -765,22 +766,33 @@ button {
   align-self: stretch;
   min-height: 600px;
   overflow: hidden;
-  background: var(--burgundy);
+  background: var(--ink);
+  border: 1px solid #1e2b2324;
+}
+.about-photo::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 36%;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 21, 17, 0) 0%,
+    rgba(14, 21, 17, 0.82) 100%
+  );
+  pointer-events: none;
 }
 .about-photo > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 15% 100%;
-  transform: scale(1.55);
-  transform-origin: 15% 100%;
-  filter: saturate(0.55);
+  object-position: 88% center;
 }
 .photo-caption {
   position: absolute;
   left: 24px;
   right: 24px;
   bottom: 25px;
+  z-index: 2;
   font-size: 7px;
   color: var(--paper);
   padding-top: 20px;
@@ -1032,11 +1044,14 @@ button {
 .contact-seal {
   position: absolute;
   right: 5%;
-  width: 27%;
-  height: 380px;
-  top: 27%;
+  width: 28%;
+  height: 390px;
+  top: 25%;
   object-fit: contain;
   transform: rotate(8deg);
+  filter:
+    drop-shadow(0 26px 38px rgba(6, 2, 3, 0.62))
+    drop-shadow(0 6px 14px rgba(0, 0, 0, 0.38));
 }
 .contact > .media-placeholder {
   min-height: 0;
@@ -1541,37 +1556,55 @@ button {
     width: 24px;
   }
   .manifesto {
-    height: auto;
-    min-height: 850px;
-    align-items: flex-start;
-    padding-top: 105px;
-    padding-bottom: 75px;
+    height: 100svh;
+    min-height: 700px;
+    max-height: 980px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 64px;
   }
   .manifesto-copy {
     width: 100%;
+    flex: none;
   }
   .manifesto .eyebrow {
     font-size: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
   .manifesto h2 {
-    font-size: clamp(68px, 13.8vw, 115px);
-    line-height: 0.98;
+    font-size: clamp(56px, 13.5vw, 96px);
+    line-height: 0.96;
   }
   .manifesto p {
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.78;
     max-width: 460px;
-    margin-top: 30px;
+    margin-top: 22px;
     position: relative;
     z-index: 2;
   }
-  .object-wrap {
-    width: 47%;
-    height: 36%;
-    right: 5%;
+  .object-wrap,
+  .manifesto-second .object-wrap {
+    position: relative;
+    right: auto;
+    left: auto;
     top: auto;
-    bottom: 60px;
+    bottom: auto;
+    width: min(66vw, 260px);
+    height: min(32svh, 245px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .object-wrap > .manifesto-object {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
   .object-wrap > .media-placeholder {
     width: 100%;
@@ -1579,13 +1612,8 @@ button {
     min-height: 0;
   }
   .section-footnote {
-    bottom: 30px;
+    bottom: 26px;
     font-size: 6px;
-  }
-  .manifesto-second .object-wrap {
-    width: 42%;
-    height: 35%;
-    right: 8%;
   }
   .brand-section {
     min-height: 640px;
@@ -1741,12 +1769,12 @@ button {
   }
   .about-photo {
     width: 100%;
-    height: 550px;
+    height: 500px;
     min-height: 0;
     align-self: auto;
   }
   .about-photo > img {
-    object-position: 15% 100%;
+    object-position: 88% center;
   }
   .photo-caption {
     font-size: 6px;
@@ -1892,17 +1920,17 @@ button {
     right: auto;
     top: auto;
     display: block;
-    margin: 35px 5px 0 auto;
-    width: 42%;
-    height: 180px;
+    margin: 44px auto 8px;
+    width: min(64vw, 248px);
+    height: min(64vw, 248px);
   }
   .contact > .media-placeholder {
     position: relative;
     right: auto;
     top: auto;
-    width: 35%;
-    height: 150px;
-    margin: 40px 5px 0 auto;
+    width: min(56vw, 220px);
+    height: min(56vw, 220px);
+    margin: 44px auto 8px;
   }
   .contact-details {
     font-size: 11px;
@@ -2093,10 +2121,10 @@ button {
     display: none;
   }
   .manifesto h2 {
-    font-size: 66px;
+    font-size: 58px;
   }
   .manifesto {
-    min-height: 830px;
+    min-height: 700px;
   }
   .manifesto p {
     max-width: 335px;
